@@ -5,29 +5,29 @@
 class Fargo < Formula
   desc "fargo is a CLI interface to Farcaster written in Go."
   homepage "https://github.com/vrypan/fargo"
-  version "0.2.7"
+  version "0.2.8"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/vrypan/fargo/releases/download/0.2.7/fargo_Darwin_x86_64.tar.gz",
+      url "https://github.com/vrypan/fargo/releases/download/0.2.8/fargo_Darwin_x86_64.tar.gz",
         headers: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
         ]
-      sha256 "cf41695984470e3f7c738ce54bb173fcc36d419a22e2fd313b05521664e5e1bf"
+      sha256 "ef08c436e87744259409b3708f4e12f4672734ad43eb05bb9c27b4bbe1e79757"
 
       def install
         bin.install "fargo"
       end
     end
     on_arm do
-      url "https://github.com/vrypan/fargo/releases/download/0.2.7/fargo_Darwin_arm64.tar.gz",
+      url "https://github.com/vrypan/fargo/releases/download/0.2.8/fargo_Darwin_arm64.tar.gz",
         headers: [
           "Accept: application/octet-stream",
           "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
         ]
-      sha256 "06835b4f373943e57ead9f5d3a2c47caa9db6cb55b50312eb46ac903c65a5b62"
+      sha256 "18828222ef4d973109fe29c87157c730018ad7ddd7709897ab7a655e8ab3ae99"
 
       def install
         bin.install "fargo"
@@ -38,12 +38,12 @@ class Fargo < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vrypan/fargo/releases/download/0.2.7/fargo_Linux_x86_64.tar.gz",
+        url "https://github.com/vrypan/fargo/releases/download/0.2.8/fargo_Linux_x86_64.tar.gz",
           headers: [
             "Accept: application/octet-stream",
             "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
           ]
-        sha256 "f36fc009b54531e0ecca09fe42851d860480517702438d32be0fb614739bba2e"
+        sha256 "1c4094ce2feae6ac3b85bf8b8a027a109a24a1e434a205c39c42a41196c01ceb"
 
         def install
           bin.install "fargo"
@@ -52,12 +52,12 @@ class Fargo < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/vrypan/fargo/releases/download/0.2.7/fargo_Linux_arm64.tar.gz",
+        url "https://github.com/vrypan/fargo/releases/download/0.2.8/fargo_Linux_arm64.tar.gz",
           headers: [
             "Accept: application/octet-stream",
             "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}"
           ]
-        sha256 "a2d3a49a7da800f90eec1c5f1ff98488564187caba00694e627dde4fa3626af8"
+        sha256 "07b5a2578cb06149c25362b4126d033c89a003c24dc310215b17851cabf26555"
 
         def install
           bin.install "fargo"
